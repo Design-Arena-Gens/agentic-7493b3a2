@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-slate-950 text-slate-50 min-h-screen;
+}
+
+a {
+  @apply text-brand-300 hover:text-brand-200 transition-colors;
+}
+
+.button-primary {
+  @apply inline-flex items-center justify-center rounded-lg bg-brand-500 px-4 py-2 font-semibold text-white shadow-md shadow-brand-900/30 transition hover:bg-brand-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-200;
+}
+
+.card {
+  @apply rounded-xl border border-white/10 bg-white/5 backdrop-blur shadow-lg shadow-black/20;
+}
